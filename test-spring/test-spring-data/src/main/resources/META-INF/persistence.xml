@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+	
+	<!-- ============================= -->
+	<!-- JPA PERSISTENCE UNIT          -->
+	<!-- ============================= -->	
+	<persistence-unit name="springDataJPA" transaction-type="RESOURCE_LOCAL" >
+		<properties>
+			<!-- Autodetection des classes annotées @Entity -->
+			<property name="hibernate.archive.autodetection" value="class"/>
+		</properties>
+	</persistence-unit>
+	
+</persistence>
